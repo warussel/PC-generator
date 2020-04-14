@@ -1,0 +1,22 @@
+---------- TODO ----------
+
+This file keeps track of the ongoing tasks / objects to be completed 
+Update this file as needed as tasks are created and resolved
+
+---------- RULES -----------
+
+1 This repo is public so all code / comments should be professional
+2 Don't develop in Master branch
+3 If you aren't certain how to do something, google it. Then try making a new branch and see if it works. 
+
+---------- TASKS -----------
+
+This week: 4/13/20 
+- Organize repo
+- Set up dev environment
+- Structure, plan out code, classes, etc
+- Begin writing function stems
+Later:
+- Begin writing code!! 
+- Determine structure for input: GUI? Input File? CLI?
+- Determine structure for output: CLI? Write to PDF?
