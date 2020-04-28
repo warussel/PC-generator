@@ -2,6 +2,9 @@
 
 class PC_class:
     '''Class representing a DnD character class'''
+
+    hp = 3
     
     def __init__(self) :
-            print("TODO: implement me!")
+            print("Character HP = " , self.hp)
+PC_class()
