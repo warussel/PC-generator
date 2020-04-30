@@ -1,0 +1,28 @@
+Notes on how we're going to organize code / classes
+
+** Remember to push all changes to develop** 
+
+Backgrounds:
+    languages from Background
+    features (we need to add actual feature text)
+    skills from Background  
+    tools, equipment from Background
+
+Races:
+    Size
+    Speed
+    languages
+    Spells?
+    Stat bonuses
+
+Class:
+    HP
+    Level
+    TODO: fill in the rest
+
+Character:
+    Background, Race, Class
+
+Data:
+    Store as JSON files (see backgrounds example)
+    Read in data with functions

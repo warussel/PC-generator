@@ -11,12 +11,13 @@ Update this file as needed as tasks are created and resolved
 
 ---------- TASKS -----------
 
-This week: 4/13/20 
-- Organize repo
-- Set up dev environment
-- Structure, plan out code, classes, etc
-- Begin writing function stems
-Later:
+This week: 4/30/20 :
 - Begin writing code!! 
+- Fill out classes
 - Determine structure for input: GUI? Input File? CLI?
 - Determine structure for output: CLI? Write to PDF?
+Later:
+- Randomization / Simple output
+- Add more to features
+- Add spellcasting support
+- Add randomization
