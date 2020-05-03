@@ -1,0 +1,31 @@
+{
+    "backgrounds" : [
+        {
+            "name": "Acolyte",
+            "source" : "PHB 127",
+            "skills" : ["Insight", "Religion"],
+            "tools" : [],
+            "languages" : 2,
+            "equipment" : ["Holy Symbol", "Prayer book", "5 Sticks of incense", "Vestments", "Common Clothes", "15 GP"],
+            "feature" : "Shelter of the Faithful" 
+        },
+        {
+            "name" : "Charlatan",
+            "source" : "PHB 128",
+            "skills" : ["Deception", "Sleight of Hand"],
+            "tools" : ["Disguise kit", "Forgery Kit"],
+            "languages" : 0,
+            "equipment" : ["Fine Clothes", "Disguise Kit", "Con Tools", "15 GP"],
+            "feature" : "False Identity"
+        },
+        {
+            "name" : "Folk Hero",
+            "source" : "PHB 131",
+            "skills" : ["Animal Handling", "Survival"],
+            "tools" : ["Artisan's Tools", "Land Vehicles"],
+            "languages" : 0,
+            "equipment" : ["Artisan's Tools", "Shovel", "Iron Pot", "Common Clothes", "10 GP"],
+            "feature" : "Rustic Hospitality"
+        }
+    ]
+}
