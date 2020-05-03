@@ -24,6 +24,7 @@ def read_backgrounds() :
     
     for elt in data["backgrounds"] :
         backgrounds.append(Background(elt["name"],elt["skills"],elt["tools"],elt["equipment"],elt["languages"],elt["feature"]))
+        backgrounds.
         print("Added: ", elt["name"])
     return backgrounds
 
