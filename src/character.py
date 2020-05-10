@@ -1,5 +1,7 @@
 # Character class
 import random
+import requests 
+from race import Race
 
 class Character:
     ''' This class should hold information about each character made using the generator '''
@@ -7,9 +9,10 @@ class Character:
     def __init__(self, name_in):
         self._name = name_in
         self.stats = {"str" : 0, "dex": 0, "con": 0, "wis": 0 , "int" : 0, "cha" : 0}
+        self.species = Race()
         print("Creating character: ", self._name)
 
-    def gen_stats(self) :
+    def roll_stats(self) :
         '''Function to generate random stats'''
         keys = list(self.stats)
         for i in range (6) :
@@ -21,7 +24,10 @@ class Character:
             self.stats[keys[i]] = sum(dice)
         print("Random Stats = ", self.stats)
             
+    def generate(self) :
+        ''' Function to generate a full character ''' 
+        self.roll_stats()
+        self.species.generate()
 
 
-yin = Character("Yin Wukong")
-yin.gen_stats()
+

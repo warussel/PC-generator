@@ -14,7 +14,6 @@ class Background :
         self.feature = feature_in
         self.num_lang = lang_in
 
-
 def read_backgrounds() :
     ''' Function to read background data from an input JSON '''
     backgrounds = []

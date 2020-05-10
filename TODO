@@ -11,13 +11,12 @@ Update this file as needed as tasks are created and resolved
 
 ---------- TASKS -----------
 
-This week: 4/30/20 :
-- Begin writing code!! 
-- Fill out classes
-- Determine structure for input: GUI? Input File? CLI?
-- Determine structure for output: CLI? Write to PDF?
-Later:
-- Randomization / Simple output
-- Add more to features
-- Add spellcasting support
-- Add randomization
+This week: 5/11/20:
+- Add API support for data: dnd5eapi.co
+- Add simple I/O using either a file or CLI
+- Implement basic character construction
+- Fill in relevant data: class, race, background, etc.
+Next:
+- Work on GUI support
+- Output (fill in PDF form for printing)
+- Support for web application?
