@@ -6,6 +6,7 @@ class Race :
     ''' A class representing a character's species '''
 
     def __init__(self) :
+        ''' Initialize member variables to default values '''
         self.name = ""
         self.scores = {"STR" : 0, "DEX": 0,"INT" : 0,"CON" : 0,"WIS" : 0,"CHA" : 0 }
         self.speed = 0 

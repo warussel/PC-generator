@@ -6,6 +6,7 @@ import sys
 class Background :
     ''' A class representing a character's background '''
 
+    # TODO: remove input from this function. __init__ should use default values
     def __init__(self,name_in,skills_in,tools_in,equip_in,lang_in,feature_in) :
         self.name = name_in
         self.skills = skills_in
@@ -15,6 +16,8 @@ class Background :
         self.num_lang = lang_in
 
 def read_backgrounds() :
+    # TODO: change to generate() function
+    # TODO: instead of using local JSON, grab JSON data using API
     ''' Function to read background data from an input JSON '''
     backgrounds = []
 
