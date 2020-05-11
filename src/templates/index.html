@@ -7,9 +7,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <script src="static/js/form.js"></script>
     <title>index</title>
   </head>
+  <script>
+    // This Javascript function serves to submit a POST request to the server and display the resulting page
+    /*
+    function mySubmit() {
+        console.log("Clicked button");
+        $.ajax({
+            url: '/generate',
+            data: $('form').serialize(),
+            type: 'POST',
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    };
+    */
+  </script>
   <body>
     <div class="jumbotron">
         <div class="container">
@@ -21,14 +41,14 @@
     </div>
     <div class="container">
         <h2>Enter Character Info</h2>
-        <form>
+        <form class="form-signin" role="form">
             <div class="form-group">
                 <label for="selectName">Character Name</label>
-                <input type="text" class="form-control" id="selectName">
+                <input type="text" class="form-control" id="selectName" name="selectName">
             </div>
             <div class="form-group">
                 <label for="selectClass">Class</label>
-                <select class="form-control" id="selectClass">
+                <select class="form-control" id="selectClass" name="selectClass">
                     <option>Random</option>
                     <option>Barbarian</option>
                     <option>Bard</option>
@@ -46,7 +66,7 @@
             </div>
             <div class="form-group">
                 <label for="selectRace">Race</label>
-                <select class="form-control" id="selectRace">
+                <select class="form-control" id="selectRace" name="selectRace">
                     <option>Random</option>
                     <option>Dragonborn</option>
                     <option>Dwarf</option>
@@ -61,7 +81,7 @@
             </div>
             <div class="form-group">
                 <label for="selectBackground">Race</label>
-                <select class="form-control" id="selectBackground">
+                <select class="form-control" id="selectBackground" name="selectBackground">
                     <option>Random</option>
                     <option>Fit to Class</option>
                     <option>Acolyte</option>
@@ -72,15 +92,14 @@
                     <option>Soldier</option>
                 </select>
             </div>
-            <button id="submit" type="submit" class="btn btn-primary">Generate</button>
+            <button id="submitBtn" type="submit" class="btn btn-lg btn-primary btn-block">Generate</button>
         </form>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="static/js/submit.js"></script>
+    
   </body>
 </html>
