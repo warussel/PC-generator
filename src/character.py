@@ -7,10 +7,10 @@ class Character:
     ''' This class should hold information about each character made using the generator '''
 
     def __init__(self, name_in):
-        self._name = name_in
+        self.name = name_in
         self.stats = {"str" : 0, "dex": 0, "con": 0, "wis": 0 , "int" : 0, "cha" : 0}
         self.species = Race()
-        print("Creating character: ", self._name)
+        print("Creating character: ", self.name)
 
     def roll_stats(self) :
         '''Function to generate random stats'''

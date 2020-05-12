@@ -1,6 +1,6 @@
 // This Javascript function serves to submit a POST request to the server and display the resulting page
-$(function() {
-    $('button').click(function(){
+/*$(function() {
+    $('#submitBtn').click(function(){
         console.log("Clicked button");
         //var name = $('#selectName').val();
         //var inputClass = $('#selectClass').val();
@@ -19,3 +19,4 @@ $(function() {
         });
     });
 });
+*/

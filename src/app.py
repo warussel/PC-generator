@@ -25,6 +25,7 @@ def generate() :
     print("Received Character: ")
     _name = request.form['selectName']
     PC = Character(_name)
+    PC.generate()
     returnDict = vars(PC)
     print("Sending Character: ", vars(PC))
     _class = request.form['selectClass']
