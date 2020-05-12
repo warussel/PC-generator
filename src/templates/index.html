@@ -9,93 +9,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
     <script src="static/js/form.js"></script>
-    <title>index</title>
+    <title>Home</title>
   </head>
-  <script>
-    // This Javascript function serves to submit a POST request to the server and display the resulting page
-    /*
-    function mySubmit() {
-        console.log("Clicked button");
-        $.ajax({
-            url: '/generate',
-            data: $('form').serialize(),
-            type: 'POST',
-            success: function(response) {
-                console.log(response);
-            },
-            error: function(error) {
-                console.log(error);
-            }
-        });
-    };
-    */
-  </script>
   <body>
-    <div class="jumbotron">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <h1>DnD Character Generator</h1>
-            <p>
-                An open source random character generator for fifth edition DnD. Create a character with ease!
-            </p>
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--<a class="navbar-brand h1">DnD Generator</a> -->
+          </div>
+          <div class="collapse navbar-collapse" id="navbarContent ">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div class="container">
-        <h2>Enter Character Info</h2>
-        <form class="form-signin" role="form">
-            <div class="form-group">
-                <label for="selectName">Character Name</label>
-                <input type="text" class="form-control" id="selectName" name="selectName">
-            </div>
-            <div class="form-group">
-                <label for="selectClass">Class</label>
-                <select class="form-control" id="selectClass" name="selectClass">
-                    <option>Random</option>
-                    <option>Barbarian</option>
-                    <option>Bard</option>
-                    <option>Cleric</option>
-                    <option>Druid</option>
-                    <option>Fighter</option>
-                    <option>Monk</option>
-                    <option>Paladin</option>
-                    <option>Ranger</option>
-                    <option>Rogue</option>
-                    <option>Sorcerer</option>
-                    <option>Warlock</option>
-                    <option>Wizard</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="selectRace">Race</label>
-                <select class="form-control" id="selectRace" name="selectRace">
-                    <option>Random</option>
-                    <option>Dragonborn</option>
-                    <option>Dwarf</option>
-                    <option>Elf</option>
-                    <option>Gnome</option>
-                    <option>Half-Elf</option>
-                    <option>Half-Orc</option>
-                    <option>Halfling</option>
-                    <option>Human</option>
-                    <option>Tiefling</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="selectBackground">Race</label>
-                <select class="form-control" id="selectBackground" name="selectBackground">
-                    <option>Random</option>
-                    <option>Fit to Class</option>
-                    <option>Acolyte</option>
-                    <option>Criminal</option>
-                    <option>Folk Hero</option>
-                    <option>Noble</option>
-                    <option>Sage</option>
-                    <option>Soldier</option>
-                </select>
-            </div>
-            <button id="submitBtn" type="submit" class="btn btn-lg btn-primary btn-block">Generate</button>
-        </form>
-    </div>
+    </nav>
 
+    {% block content %}
+    {% endblock %}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

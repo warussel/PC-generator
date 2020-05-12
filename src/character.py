@@ -28,6 +28,6 @@ class Character:
         ''' Function to generate a full character ''' 
         self.roll_stats()
         self.species.generate()
-
+        
 
 

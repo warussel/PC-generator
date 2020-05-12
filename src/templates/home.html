@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+    </head>
+    <body>
+        {% extends "index.html" %}
+        {% block content %}
+
+        <div class="jumbotron">
+            <div class="container">
+                <br />
+                <h1>5th Edition Character Generator</h1>
+                <p>
+                    An open source random character generator for fifth edition DnD. Create a character with ease!
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Enter Character Info</h2>
+            <form class="form-signin" role="form">
+                <div class="form-group">
+                    <label for="selectName">Character Name</label>
+                    <input type="text" class="form-control" id="selectName" name="selectName">
+                </div>
+                <div class="form-group">
+                    <label for="selectClass">Class</label>
+                    <select class="form-control" id="selectClass" name="selectClass">
+                        <option>Random</option>
+                        <option>Barbarian</option>
+                        <option>Bard</option>
+                        <option>Cleric</option>
+                        <option>Druid</option>
+                        <option>Fighter</option>
+                        <option>Monk</option>
+                        <option>Paladin</option>
+                        <option>Ranger</option>
+                        <option>Rogue</option>
+                        <option>Sorcerer</option>
+                        <option>Warlock</option>
+                        <option>Wizard</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="selectRace">Race</label>
+                    <select class="form-control" id="selectRace" name="selectRace">
+                        <option>Random</option>
+                        <option>Dragonborn</option>
+                        <option>Dwarf</option>
+                        <option>Elf</option>
+                        <option>Gnome</option>
+                        <option>Half-Elf</option>
+                        <option>Half-Orc</option>
+                        <option>Halfling</option>
+                        <option>Human</option>
+                        <option>Tiefling</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="selectBackground">Race</label>
+                    <select class="form-control" id="selectBackground" name="selectBackground">
+                        <option>Random</option>
+                        <option>Fit to Class</option>
+                        <option>Acolyte</option>
+                        <option>Criminal</option>
+                        <option>Folk Hero</option>
+                        <option>Noble</option>
+                        <option>Sage</option>
+                        <option>Soldier</option>
+                    </select>
+                </div>
+                <button id="submitBtn" type="submit" class="btn btn-lg btn-primary btn-block">Generate</button>
+            </form>
+            <br />
+        </div>
+    
+        {% endblock %}
+    </body>
+</html>
