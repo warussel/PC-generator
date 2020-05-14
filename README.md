@@ -1,7 +1,19 @@
 # PC-generator
-CLI random player character generator for DnD fifth edition 
 
-More will be added to this README as development continues
+Web application that generates characters for use in DnD 5e roleplaying game
+
+### Technology Used
+
+**Tools and Frameworks**
+Front-End:
+- HTML/CSS/Javascript 
+- Bootstrap
+Back-End:
+- Python 
+- Flask
+- REST API
+
+## Development
 
 ### Getting Started
 1 Look up info on Command Line Interface / download for windows: https://www.cygwin.com/
