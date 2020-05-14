@@ -13,6 +13,14 @@ Back-End:
 - Flask
 - REST API
 
+## Usage
+
+**Note:** The app will be deployed to Heroku soon
+
+![HomePage](screenshot_home.png)
+
+Fill out the forms on the home page. The name form is required. Then click generate. View the results on the results page, or print a PDF copy using the print button.
+
 ## Development
 
 ### Getting Started
