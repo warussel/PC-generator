@@ -1,7 +1,7 @@
 # app.py
 # Backend to server using Flask
 
-from flask import Flask, render_template, request, json, send_file
+from flask import Flask, render_template, request, json, send_from_directory
 from character import Character
 app = Flask(__name__)
 
@@ -21,7 +21,6 @@ def about() :
 # Results page, generate a character
 @app.route("/generate", methods=['POST'])
 def generate() :
-
     print("Received Character: ")
     _name = request.form['selectName']
     PC = Character(_name)
@@ -34,7 +33,16 @@ def generate() :
 
     return render_template("results.html", character=returnDict)
 
+@app.route("/print")
+def servePDF() :
+    print("Printing PDF")
+    filename = f"CharacterSheet.pdf"
 
+    return render_template("print.html")
+#    try:
+#        return send_from_directory("./static",filename=filename)
+#    except Exception as e :
+#        return str(e)
 
 if __name__ == "__main__" :
     app.run(debug=True) #TODO: set debug to false for deployment
