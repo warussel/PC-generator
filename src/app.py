@@ -2,7 +2,7 @@
 # Backend to server using Flask
 
 from flask import Flask, render_template, request, json, send_from_directory
-from character import Character
+from character import Character, parse_input
 app = Flask(__name__)
 
 # Home page to fill in character info
@@ -21,18 +21,22 @@ def about() :
 # Results page, generate a character
 @app.route("/generate", methods=['POST'])
 def generate() :
-    print("Received Character: ")
+    # Create a character
     _name = request.form['selectName']
     PC = Character(_name)
-    PC.generate()
-    returnDict = vars(PC)
-    print("Sending Character: ", vars(PC))
-    _class = request.form['selectClass']
-    _race = request.form['selectRace']
-    _bkground = request.form['selectBackground']
+    _class = parse_input(request.form['selectClass'])
+    _race = parse_input(request.form['selectRace'])
+    _bkground = parse_input(request.form['selectBackground'])
+    # Generate PC stats
+    PC.generate(_class,_race,_bkground)
+    returnDict = PC.output()
+    print("Sending Character: ", returnDict)
 
+    # Post character info
     return render_template("results.html", character=returnDict)
 
+# Display Character PDF
+# TODO: Fill in PDF
 @app.route("/print")
 def servePDF() :
     print("Printing PDF")

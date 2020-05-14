@@ -3,12 +3,17 @@ import random
 import requests 
 from race import Race
 
+def parse_input(input) :
+    if input == "Random" :
+        return ""
+    else :
+        return str(input).lower()
 class Character:
     ''' This class should hold information about each character made using the generator '''
 
     def __init__(self, name_in):
         self.name = name_in
-        self.stats = {"str" : 0, "dex": 0, "con": 0, "wis": 0 , "int" : 0, "cha" : 0}
+        self.stats = {"STR" : 0, "DEX": 0, "CON": 0, "INT": 0 , "WIS" : 0, "CHA" : 0}
         self.species = Race()
         print("Creating character: ", self.name)
 
@@ -24,10 +29,13 @@ class Character:
             self.stats[keys[i]] = sum(dice)
         print("Random Stats = ", self.stats)
             
-    def generate(self) :
+    def generate(self,input_class,input_race,input_background) :
         ''' Function to generate a full character ''' 
         self.roll_stats()
-        self.species.generate()
+        self.species.generate(input_race)
         
-
+    def output(self) :
+        ''' Function to convert character to a dictionary for JSON output '''
+        self.species = vars(self.species)
+        return vars(self)
 
