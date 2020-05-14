@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Results</title>
+  </head>
+  <body>
+    {% extends "index.html" %}
+    {% block content %}
+    <div class="container">
+        <br />
+        <h1>{{ character.name }}</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col md-4 blog-sidebar">
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">Stats</h2>
+                        <div class="row"><p>STR: {{ character.stats["str"]}}</p></div>
+                        <div class="row"><p>DEX: {{ character.stats["dex"]}}</p></div>
+                        <div class="row"><p>CON: {{ character.stats["con"]}}</p></div>
+                        <div class="row"><p>INT: {{ character.stats["int"]}}</p></div>
+                        <div class="row"><p>WIS: {{ character.stats["wis"]}}</p></div>
+                        <div class="row"><p>CHA: {{ character.stats["cha"]}}</p></div>
+                    </div>       
+                </div>
+                <div class="col md-8">
+                    <h2>Info</h2>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" role="button" href="/static/CharacterSheet.pdf">Print</button>
+    </div>
+        
+   
+    {% endblock %}
+  </body>
+</html>

@@ -24,5 +24,14 @@ Character:
     Background, Race, Class
 
 Data:
-    Store as JSON files (see backgrounds example)
+    Use dnd5e API
     Read in data with functions
+
+Hosting:
+    Initial web hosting using flask
+    Eventually deploy to heroku / google
+
+GUI:
+    To start, use a simple html page
+    Later, add react?
+    Output: fill in PDF file?

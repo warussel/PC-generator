@@ -11,13 +11,11 @@ Update this file as needed as tasks are created and resolved
 
 ---------- TASKS -----------
 
-This week: 4/30/20 :
-- Begin writing code!! 
-- Fill out classes
-- Determine structure for input: GUI? Input File? CLI?
-- Determine structure for output: CLI? Write to PDF?
-Later:
-- Randomization / Simple output
-- Add more to features
-- Add spellcasting support
-- Add randomization
+This week: 5/11/20:
+- Implement basic character construction
+- Fill in relevant data: class, race, background, etc.
+- Finish front-end development (bootstrap, output)
+- Output python dictionary
+Next:
+- Output (fill in PDF form for printing)
+- Link to PDF via website
