@@ -2,8 +2,10 @@
 import random
 import requests 
 from race import Race
+from background import Background, read_backgrounds
 
 def parse_input(input) :
+    ''' Parse input from Webpage form '''
     if input == "Random" :
         return ""
     else :
@@ -15,6 +17,7 @@ class Character:
         self.name = name_in
         self.stats = {"STR" : 0, "DEX": 0, "CON": 0, "INT": 0 , "WIS" : 0, "CHA" : 0}
         self.species = Race()
+        self.background = Background()
         print("Creating character: ", self.name)
 
     def roll_stats(self) :
@@ -33,6 +36,9 @@ class Character:
         ''' Function to generate a full character ''' 
         self.roll_stats()
         self.species.generate(input_race)
+        backgrounds = read_backgrounds()
+        self.background.generate(backgrounds,input_background)
+
         
     def output(self) :
         ''' Function to convert character to a dictionary for JSON output '''

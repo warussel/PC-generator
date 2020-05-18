@@ -11,7 +11,7 @@ def main():
     # Build Character
     name = "Yin" # TODO: Input character name
     PC = Character(name)
-    PC.generate()
+    PC.generate("","","")
 
 if __name__ == "__main__":
     main()

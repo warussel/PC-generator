@@ -25,7 +25,6 @@ class Race :
             # Select a random race
             for elt in data :
                 races.append(elt["index"])
-                print("Race: ", elt["index"])
             self.name = races[random.randint(0,len(races) - 1)]
             print("Creating random race: ", self.name)
         

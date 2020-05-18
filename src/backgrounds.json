@@ -10,13 +10,13 @@
             "feature" : "Shelter of the Faithful" 
         },
         {
-            "name" : "Charlatan",
+            "name" : "Criminal",
             "source" : "PHB 128",
-            "skills" : ["Deception", "Sleight of Hand"],
-            "tools" : ["Disguise kit", "Forgery Kit"],
+            "skills" : ["Deception", "Stealth"],
+            "tools" : ["Gaming set", "Thieves tools"],
             "languages" : 0,
-            "equipment" : ["Fine Clothes", "Disguise Kit", "Con Tools", "15 GP"],
-            "feature" : "False Identity"
+            "equipment" : ["Crowbar", "Common Clothes", "15 GP"],
+            "feature" : "Criminal Contact"
         },
         {
             "name" : "Folk Hero",
@@ -26,6 +26,33 @@
             "languages" : 0,
             "equipment" : ["Artisan's Tools", "Shovel", "Iron Pot", "Common Clothes", "10 GP"],
             "feature" : "Rustic Hospitality"
+        },
+        {
+            "name" : "Noble",
+            "source" : "PHB",
+            "skills" : ["History", "Persuasion"],
+            "tools" : ["Gaming set"],
+            "languages" : 1,
+            "equipment" : ["Fine clothes", "Signet ring", "Scroll of pedigree","25 GP"],
+            "feature" : "Position of Privilege"
+        },
+        {
+            "name" : "Sage",
+            "source" : "PHB",
+            "skills" : ["Arcana", "History"],
+            "tools" : [],
+            "languages" : 2,
+            "equipment" : ["Bottle of ink", "Quill", "Small knife","Letter from a colleague", "Common Clothes", "10 GP"],
+            "feature" : "Researcher"
+        },
+        {
+            "name" : "Soldier",
+            "source" : "PHB",
+            "skills" : ["Athletics", "Intimidation"],
+            "tools" : ["Gaming set", "Land Vehicles"],
+            "languages" : 0,
+            "equipment" : ["Insignia of Rank", "Trophy from a fallen enemy", "Bone dice", "Common Clothes", "10 GP"],
+            "feature" : "Military Rank"
         }
     ]
 }

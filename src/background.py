@@ -2,18 +2,38 @@
 import json
 import os
 import sys
+import random
 
 class Background :
     ''' A class representing a character's background '''
 
     # TODO: remove input from this function. __init__ should use default values
-    def __init__(self,name_in,skills_in,tools_in,equip_in,lang_in,feature_in) :
+    def __init__(self) :
+        self.name = ""
+        self.skills = []
+        self.tools = []
+        self.equipment = []
+        self.feature = ""
+        self.num_lang = 0
+
+    def set_val(self,name_in,skills_in,tools_in,equip_in,lang_in,feature_in) :
         self.name = name_in
         self.skills = skills_in
         self.tools = tools_in
         self.equipment = equip_in
         self.feature = feature_in
         self.num_lang = lang_in
+
+    def generate(self,backgrounds,b_in="") :
+
+        index = random.randint(0,len(backgrounds) - 1)
+        for i in range(len(backgrounds)) :
+            if backgrounds[i].name == b_in :
+                index = i
+
+        self = backgrounds[index]
+        print("Chose background: ", self.name)
+
 
 def read_backgrounds() :
     # TODO: change to generate() function
@@ -25,9 +45,8 @@ def read_backgrounds() :
     data = json.load(f)
     
     for elt in data["backgrounds"] :
-        backgrounds.append(Background(elt["name"],elt["skills"],elt["tools"],elt["equipment"],elt["languages"],elt["feature"]))
-        backgrounds.
-        print("Added: ", elt["name"])
+        backgrounds.append(Background())
+        backgrounds[-1].set_val(elt["name"],elt["skills"],elt["tools"],elt["equipment"],elt["languages"],elt["feature"])
     return backgrounds
 
 sample = read_backgrounds()

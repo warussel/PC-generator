@@ -11,11 +11,9 @@ Update this file as needed as tasks are created and resolved
 
 ---------- TASKS -----------
 
-This week: 5/11/20:
+This week: 5/18/20:
 - Implement basic character construction
 - Fill in relevant data: class, race, background, etc.
-- Finish front-end development (bootstrap, output)
-- Output python dictionary
 Next:
 - Output (fill in PDF form for printing)
-- Link to PDF via website
+- Host webapp
