@@ -31,8 +31,13 @@ class Background :
             if backgrounds[i].name == b_in :
                 index = i
 
-        self = backgrounds[index]
-        print("Chose background: ", self.name)
+        self.name = backgrounds[index].name
+        self.skills = backgrounds[index].skills
+        self.tools = backgrounds[index].tools
+        self.equipment = backgrounds[index].equipment
+        self.feature = backgrounds[index].feature
+        self.num_lang = backgrounds[index].num_lang
+        print("Chosen background: ", self.name)
 
 
 def read_backgrounds() :

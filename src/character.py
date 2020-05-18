@@ -43,5 +43,7 @@ class Character:
     def output(self) :
         ''' Function to convert character to a dictionary for JSON output '''
         self.species = vars(self.species)
+        self.background = vars(self.background)
+        print("Checking background: ", self.background['name'])
         return vars(self)
 

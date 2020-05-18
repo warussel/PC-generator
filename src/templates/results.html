@@ -14,20 +14,29 @@
             <div class="row">
                 <div class="col md-8">
                   <h2>Stats</h2>
-                  <li>STR: {{ character.stats["STR"] }}</li>
-                  <li>DEX: {{ character.stats["DEX"] }}</li>
-                  <li>CON: {{ character.stats["CON"] }}</li>
-                  <li>INT: {{ character.stats["INT"] }}</li>
-                  <li>WIS: {{ character.stats["WIS"] }}</li>
-                  <li>CHA: {{ character.stats["CHA"] }}</li>
+                  <p>STR: {{ character.stats["STR"] }}</p>
+                  <p>DEX: {{ character.stats["DEX"] }}</p>
+                  <p>CON: {{ character.stats["CON"] }}</p>
+                  <p>INT: {{ character.stats["INT"] }}</p>
+                  <p>WIS: {{ character.stats["WIS"] }}</p>
+                  <p>CHA: {{ character.stats["CHA"] }}</p>
                 </div>       
                 <div class="col md-4">
                   <h2>Info</h2>
                   <p>
                     <strong>Race:</strong> {{ character.species['name'] }}
                   </p>
-                  <li>Size: {{ character.species['size'] }}</li>
-                  <li>Speed: {{ character.species['speed'] }}</li>
+                  <ul>
+                    <p>Size: {{ character.species['size'] }}</p>
+                    <p>Speed: {{ character.species['speed'] }}</p>
+                    <p>Languages: {{ character.species['languages'] }}</p>
+                  </ul>
+                  <p>
+                    <strong>Background:</strong> {{ character.background['name'] }}
+                    <ul>
+                      <p>Feature: {{ character.background['feature'] }}</p>
+                    </ul>
+                  </p>
                 </div>
             </div>
         </div>

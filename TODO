@@ -15,5 +15,5 @@ This week: 5/18/20:
 - Implement basic character construction
 - Fill in relevant data: class, race, background, etc.
 Next:
-- Output (fill in PDF form for printing)
+- Output (fill in PDF form for printing): look into PyPDF2
 - Host webapp
